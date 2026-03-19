@@ -1,0 +1,50 @@
+BasedOnStyle: LLVM
+
+Standard: c++20
+UseTab: Never
+IndentWidth: 4
+
+# donnot sort includes, as we want to keep them grouped by category (standard, third-party, project)
+SortIncludes: false
+
+# We chose "int& foo" over "int &foo" for this project:
+DerivePointerAlignment: false
+PointerAlignment: Left
+
+# Line length: 80 characters recommended, comments may be longer
+# (might be exceeded in exceptional cases for a maintainable layout)
+ColumnLimit: 0
+ReflowComments: false
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterStruct: false
+  AfterClass: false
+  AfterFunction: false
+  BeforeElse: false
+  SplitEmptyFunction: false
+
+AlignArrayOfStructures: 'Right'
+
+AlignConsecutiveAssignments: 'Consecutive'
+AlignConsecutiveDeclarations: 'Consecutive'
+AlignTrailingComments: true
+
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+
+AllowShortIfStatementsOnASingleLine: 'Never'
+
+AllowShortLambdasOnASingleLine: 'Empty'
+
+AlwaysBreakTemplateDeclarations: 'Yes'
+SpaceAfterTemplateKeyword: true
+
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeParens: 'ControlStatements'
+SpacesInParentheses: false
+
+BreakConstructorInitializers: 'BeforeComma'
+BreakInheritanceList: 'BeforeComma'
+
